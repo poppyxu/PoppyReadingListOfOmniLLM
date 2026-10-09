@@ -12,7 +12,13 @@ Papers are listed in tables. The name links to the paper.
   - [Audio Foundations](#audio-foundations)
 - [Omni Modeling and Training](#omni-modeling-and-training)
   - [Duplex Omni Models](#duplex-omni-models)
+    - [Full-duplex Audio-Visual Models](#full-duplex-audio-visual-models)
+    - [Streaming Video Interaction](#streaming-video-interaction)
   - [Simplex Omni Models](#simplex-omni-models)
+    - [Qwen Omni Series](#qwen-omni-series)
+    - [MiMo Series](#mimo-series)
+    - [MiniCPM Series](#minicpm-series)
+    - [Other Open Models](#other-open-models)
   - [Duplex Audio Models](#duplex-audio-models)
 - [Omni Evaluation](#omni-evaluation)
   - [Simplex Omni Evaluation](#simplex-omni-evaluation)
@@ -46,13 +52,25 @@ How text, vision, and audio are combined in one model and trained for interactio
 
 The model watches a live stream and can decide to speak, stay silent, or keep going while new frames arrive.
 
+#### Full-duplex Audio-Visual Models
+
+The model keeps receiving audio and video while it speaks.
+
 | Model | Venue | What it does | Links |
 | --- | --- | --- | --- |
 | [Realtime-Venus](https://arxiv.org/abs/2609.13814) | Venus Team, arXiv 2026 | Full-duplex system with two models. Realtime-Venus-Omni does audio-visual dialogue. A background harness can reason and use tools while the conversation continues. | |
-| [MOSS-VL](https://arxiv.org/abs/2608.15045) | Wang et al., arXiv 2026 | Real-time vision-language interaction. The Realtime variant keeps seeing new frames while it generates, and is trained on when to speak, stay silent, or revise. | [Project](https://openmoss.ai/MOSS-VL/moss-vl.html) |
-| [JoyAI-VL-Interaction](https://arxiv.org/abs/2606.14777) | Yao et al., arXiv 2026 | Watches a live video and, each second, chooses to stay silent, respond, or hand the problem to a background model. | [Code](https://github.com/jd-opensource/JoyAI-VL-Interaction) |
+| [Gander](https://arxiv.org/abs/2609.08977) | Hunyuan Speech Team, arXiv 2026 | Full-duplex audio-visual dialogue. A cerebellum speaks in real time, and a brain handles reasoning and tools while the conversation continues. | [Project](https://Omni-Interaction-Gander.github.io/Omni-Interaction-Agent) · [Code](https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent) |
 | [DuplexOmni](https://arxiv.org/abs/2606.09186) | Huang et al., arXiv 2026 | Streaming audio and video in, text and speech out. An interaction layer speaks in real time, and a thinking layer handles reasoning and tools in parallel. | [Code](https://github.com/MuyeHuang/DuplexOmni) |
 | [MiniCPM-o 4.5](https://arxiv.org/abs/2604.27393) | Cui et al., arXiv 2026 | Sees, listens, and speaks at the same time. Omni-Flow puts inputs and outputs on one timeline, including proactive reminders. | [Code](https://github.com/OpenBMB/MiniCPM-o) |
+
+#### Streaming Video Interaction
+
+The model watches a video stream and chooses when to speak, stay silent, or continue.
+
+| Model | Venue | What it does | Links |
+| --- | --- | --- | --- |
+| [MOSS-VL](https://arxiv.org/abs/2608.15045) | Wang et al., arXiv 2026 | Real-time vision-language interaction. The Realtime variant keeps seeing new frames while it generates, and is trained on when to speak, stay silent, or revise. | [Project](https://openmoss.ai/MOSS-VL/moss-vl.html) |
+| [JoyAI-VL-Interaction](https://arxiv.org/abs/2606.14777) | Yao et al., arXiv 2026 | Watches a live video and, each second, chooses to stay silent, respond, or hand the problem to a background model. | [Code](https://github.com/jd-opensource/JoyAI-VL-Interaction) |
 | [AURA](https://arxiv.org/abs/2604.04184) | Lu et al., arXiv 2026 | Streaming video model for real-time questions and proactive replies. It can remain silent or respond on its own. | [Project](https://aurateam2026.github.io/) |
 | [Proact-VL](https://arxiv.org/abs/2603.03447) | Yan et al., ICML 2026 | A response head decides when to speak on a live video, aimed at commentary and guidance. | [Code](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) |
 | [Streamo](https://arxiv.org/abs/2512.21334) | Xia et al., CVPR 2026 | Streaming video assistant. Silence, standby, and response states decide when to speak. | [Code](https://github.com/maifoundations/Streamo) |
@@ -64,15 +82,52 @@ The model watches a live stream and can decide to speak, stay silent, or keep go
 
 The model receives the whole input and returns one answer. It does not have to decide, on its own, when to speak during a live stream.
 
+#### Qwen Omni Series
+
+Text, image, audio, and video go in. Text and speech come out. Later models change the Thinker–Talker design, the context length, and how speech stays aligned with text.
+
 | Model | Venue | What it does | Links |
 | --- | --- | --- | --- |
+| [Qwen3.8-Omni-Flash](https://arxiv.org/abs/2609.25611) | Qwen Team, arXiv 2026 | Sparse MoE and a 1M context, for long video and audio work that calls tools. | |
+| [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804) | Qwen Team, arXiv 2026 | Longer audio and video context. Text and speech stay aligned, and this generation adds turn-taking and interruption. | [API](https://www.alibabacloud.com/help/en/model-studio/qwen-omni) |
+| [Qwen3-Omni](https://arxiv.org/abs/2509.17765) | Qwen Team, arXiv 2025 | MoE Thinker–Talker, longer audio, and lower streaming latency. Instruct, Thinking, and Captioner are branches of this generation. | [Code](https://github.com/QwenLM/Qwen3-Omni) |
 | [Qwen2.5-Omni](https://arxiv.org/abs/2503.20215) | Qwen Team, arXiv 2025 | Text, image, audio, and video in. Text and streaming speech out, with a Thinker–Talker design. | [Code](https://github.com/QwenLM/Qwen2.5-Omni) |
-| [MiniCPM-o 2.6](https://huggingface.co/openbmb/MiniCPM-o-2_6) | OpenBMB, 2025 | Vision, speech, and multimodal live streaming in one model. Later full-duplex interaction is in MiniCPM-o 4.5. | [Code](https://github.com/OpenBMB/MiniCPM-o) |
-| [Qwen3-Omni](https://arxiv.org/abs/2509.17765) | Qwen Team, arXiv 2025 | Next model in the same series. MoE Thinker–Talker, longer audio, and lower streaming latency. | [Code](https://github.com/QwenLM/Qwen3-Omni) |
-| [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804) | Qwen Team, arXiv 2026 | Later model in the same series. Adds native turn-taking and interruption, plus longer audio and video context. | [API](https://www.alibabacloud.com/help/en/model-studio/qwen-omni) |
-| [MiMo-V2-Omni](https://mimo.xiaomi.com/mimo-v2-omni) | Xiaomi, 2026 | Omni-modal model for text, image, video, and audio, with agentic use. No technical report found. | [Page](https://mimo.xiaomi.com/mimo-v2-omni) |
-| [VideoChat](https://arxiv.org/abs/2305.06355) | Li et al., arXiv 2023 | Chat-centric video understanding. A learnable interface connects video models to a language model. | [Code](https://github.com/OpenGVLab/Ask-Anything) |
+
+#### MiMo Series
+
+Xiaomi's omni line. These entries follow official model pages and release notes.
+
+| Model | Venue | What it does | Links |
+| --- | --- | --- | --- |
+| [MiMo-V2.6-Pro](https://mimo.mi.com/docs/en-US/news/latest/v2-6) | Xiaomi, 2026 | Fully multimodal flagship in the V2.6 release, aimed at long-horizon agent tasks. | [Release](https://mimo.mi.com/docs/en-US/news/latest/v2-6) |
+| [MiMo-V2.6-Flash](https://mimo.mi.com/docs/en-US/news/latest/v2-6) | Xiaomi, 2026 | Smaller fully multimodal model in the same release. | [Release](https://mimo.mi.com/docs/en-US/news/latest/v2-6) |
+| [MiMo-V2.5](https://mimo.mi.com/models/en-US/mimo-v2.5) | Xiaomi, 2026 | Text, image, video, and audio in. Text out, with a 1M context and tool use. | [Specs](https://mimo.mi.com/models/en-US/mimo-v2.5) |
+| [MiMo-V2-Omni](https://mimo.xiaomi.com/mimo-v2-omni) | Xiaomi, 2026 | Image, video, and audio perception, with tool calls and perception-to-action use. No technical report found. | [Page](https://mimo.xiaomi.com/mimo-v2-omni) |
+
+#### MiniCPM Series
+
+OpenBMB's on-device omni line. MiniCPM-o 4.5 is the full-duplex generation and is also listed under [Full-duplex Audio-Visual Models](#full-duplex-audio-visual-models).
+
+| Model | Venue | What it does | Links |
+| --- | --- | --- | --- |
+| [MiniCPM-o 4.5](https://arxiv.org/abs/2604.27393) | Cui et al., arXiv 2026 | Sees, listens, and speaks at the same time. Omni-Flow puts inputs and outputs on one timeline, including proactive reminders. | [Code](https://github.com/OpenBMB/MiniCPM-o) |
+| [MiniCPM-o 2.6](https://huggingface.co/openbmb/MiniCPM-o-2_6) | OpenBMB, 2025 | Vision, speech, and multimodal live streaming in one model. | [Code](https://github.com/OpenBMB/MiniCPM-o) |
+
+#### Other Open Models
+
+Open models outside the series above. Each takes more than one modality and returns one answer.
+
+| Model | Venue | What it does | Links |
+| --- | --- | --- | --- |
+| [Nemotron 3 Nano Omni](https://arxiv.org/abs/2604.24954) | NVIDIA, arXiv 2026 | Open model for vision, audio, video, and text, built on a sparse MoE backbone. | |
+| [LongCat-Flash-Omni](https://arxiv.org/abs/2511.00279) | Meituan LongCat Team, arXiv 2025 | Text, image, audio, and video in, with speech out, on a shortcut-connected MoE. Covers offline understanding and real-time audio-visual interaction. | [Code](https://github.com/meituan-longcat/LongCat-Flash-Omni) |
 | [OmniVinci](https://arxiv.org/abs/2510.15870) | Ye et al., ICLR 2026 | Open omni-modal understanding of image, video, audio, and text, with explicit vision–audio alignment. | [Project](https://nvlabs.github.io/OmniVinci/) |
+| [Ola](https://arxiv.org/abs/2502.04328) | arXiv 2025 | Aligns image, video, and audio in stages. Video connects the other modalities. | [Code](https://github.com/Ola-Omni/Ola) |
+| [Baichuan-Omni-1.5](https://arxiv.org/abs/2501.15368) | arXiv 2025 | Later model in the Baichuan-Omni line. | |
+| [VITA-1.5](https://arxiv.org/abs/2501.01957) | arXiv 2025 | Later model in the VITA line. | |
+| [Baichuan-Omni](https://arxiv.org/abs/2410.08565) | arXiv 2024 | Open omni model trained in stages, with an audio tokenizer and audio output. | |
+| [VITA](https://arxiv.org/abs/2408.05211) | arXiv 2024 | Open interactive omni model. Vision and speech are trained in sequence. | |
+| [VideoChat](https://arxiv.org/abs/2305.06355) | Li et al., arXiv 2023 | Chat-centric video understanding. A learnable interface connects video models to a language model. | [Code](https://github.com/OpenGVLab/Ask-Anything) |
 
 ### Duplex Audio Models
 
