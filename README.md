@@ -24,6 +24,8 @@ Papers are listed in tables. The name links to the paper.
   - [Simplex Omni Evaluation](#simplex-omni-evaluation)
   - [Duplex Omni Evaluation](#duplex-omni-evaluation)
   - [Audio Duplex Evaluation](#audio-duplex-evaluation)
+  - [Audio Simplex Evaluation](#audio-simplex-evaluation)
+  - [Speech Generation Evaluation](#speech-generation-evaluation)
 - [Real-world Omni Agents](#real-world-omni-agents)
   - [Voice Agents](#voice-agents)
   - [Audio-Visual Agents](#audio-visual-agents)
@@ -185,6 +187,28 @@ Spoken full-duplex evaluation. The model can speak and listen at the same time. 
 | [DuplexSpeechBench-IFEval](https://arxiv.org/abs/2609.03423) | Mathur and Manocha, arXiv 2026 | Conditioning levels change how tightly a persona constrains behavior. Each role has a persona, and the score checks whether the model follows it. | [Project](https://dsb-ifeval.github.io) |
 | [τ-Voice](https://arxiv.org/abs/2603.13686) | Ray et al., arXiv 2026 | Full-duplex voice agents on grounded tasks. Scores both task completion and the duplex interaction. | [Code](https://github.com/sierra-research/tau2-bench) |
 | [Real-Time Voice AI Hears but Does Not Listen](https://arxiv.org/abs/2606.26083) | Bartelds et al., arXiv 2026 | Whether realtime voice systems act on tone, not only words: distress, fear, sarcasm, accent, and age. | [Project](https://real-time-voice.github.io/) |
+
+### Audio Simplex Evaluation
+
+Turn-based audio evaluation. The model receives a complete clip or a spoken question and returns one answer. Tasks cover general audio reasoning and spoken question answering.
+
+| Paper | Venue | What it evaluates | Links |
+| --- | --- | --- | --- |
+| [MMAU](https://arxiv.org/abs/2410.19168) | Sakshi et al., ICLR 2025 | Speech, environmental sound, and music. Questions mix information extraction with multi-step reasoning. | [Code](https://github.com/Sakshi113/MMAU) · [Project](https://mmaubench.github.io/) |
+| [MMAU-Pro](https://arxiv.org/abs/2508.13992) | Kumar et al., AAAI 2026 | Harder audio questions on in-the-wild recordings: long clips, several clips at once, spatial audio, and open-ended answers. | [Code](https://github.com/sonalkum/MMAUPro) · [Project](https://sonalkum.github.io/mmau-pro/) |
+| [MMAR](https://arxiv.org/abs/2505.13032) | Ma et al., NeurIPS 2025 | Deep reasoning over speech, sound, music, and their mixture. Each question has a written rationale. | [Code](https://github.com/ddlBoJack/MMAR) · [Data](https://huggingface.co/datasets/BoJack/MMAR) |
+| [MMSU](https://arxiv.org/abs/2506.04779) | Wang et al., ICLR 2026 | Spoken-language understanding on real recordings: phonetics, prosody, syntax, semantics, and paralinguistics. | [Code](https://github.com/dingdongwang/MMSU) · [Project](https://ddw.github.io/mmsu_homepage/) |
+| [VoiceBench](https://arxiv.org/abs/2410.17196) | Chen et al., TACL 2026 | A voice assistant answers spoken instructions covering knowledge, instruction following, and safety. AlpacaEval is the open-ended subset. The subset also named MMSU is a spoken MMLU-Pro quiz, separate from the MMSU benchmark above. | [Code](https://github.com/MatthewCYM/VoiceBench) |
+| [UltraEval-Audio](https://arxiv.org/abs/2601.01373) | Shi et al., ACL 2026 | One harness for audio understanding and generation. Spoken QA here includes Llama Questions, Speech TriviaQA, and Chinese Speech CMMLU. | [Code](https://github.com/OpenBMB/UltraEval-Audio) |
+
+### Speech Generation Evaluation
+
+The model generates the speech. Scores cover whether the words are correct and whether the voice matches a reference speaker or a requested style.
+
+| Paper | Venue | What it evaluates | Links |
+| --- | --- | --- | --- |
+| [Seed-TTS-eval](https://arxiv.org/abs/2406.02430) | Anastassiou et al., arXiv 2024 | Zero-shot voice cloning in English and Mandarin. A reference clip sets the speaker. Scores are recognition error and speaker similarity. The Mandarin hard set uses tongue twisters and repetitions. | [Code](https://github.com/BytedanceSpeech/seed-tts-eval) |
+| [VStyle](https://arxiv.org/abs/2509.09716) | Zhan et al., arXiv 2025 | Spoken instructions in Chinese and English ask for a change in timbre, prosody, role, or empathy. An audio model judges content, style, and naturalness. | [Code](https://github.com/alibaba/vstyle) · [Project](https://junzhan2000.github.io/VStyle.github.io/) |
 
 ## Real-world Omni Agents
 
