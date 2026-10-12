@@ -173,6 +173,7 @@ The model keeps listening while it can speak, and decides both when to respond a
 | [Omni-DuplexEval](https://arxiv.org/abs/2605.17360) | He et al., arXiv 2026 | Full-duplex interaction: continuous description and proactive reminders, scored on content and timing. | [Code](https://github.com/OpenBMB/Omni-DuplexEval) |
 | [OmniPro](https://arxiv.org/abs/2605.18577) | Zhao et al., arXiv 2026 | Proactive response on audio-visual streams. Online mode lets the model choose when to speak. | [Project](https://ruixiangzhao.github.io/OmniPro) · [Data](https://huggingface.co/datasets/omniproact-bench/OmniPro) |
 | [OmniInteract](https://arxiv.org/abs/2605.26485) | Lu et al., arXiv 2026 | Native online audio-visual interaction, including interruption and nested turns, without future content. | [Code](https://github.com/Lucky-Lance/OmniInteract) |
+| [VideoFDB](https://arxiv.org/abs/2605.30256) | Mazumdar et al., arXiv May 2026 | Full-duplex conversation on real video calls. The agent is scored on perceiving and producing nonverbal cues such as nods, gaze, and gestures. | [Project](https://research.nvidia.com/labs/amri/projects/video-fdb/) · [Data](https://huggingface.co/datasets/nvidia/video-full-duplex-benchmark) |
 
 ### Audio Duplex Evaluation
 
