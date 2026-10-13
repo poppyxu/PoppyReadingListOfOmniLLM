@@ -10,6 +10,7 @@ Papers are listed in tables. The name links to the paper.
   - [LLM and Reasoning](#llm-and-reasoning)
   - [Vision-Language Models](#vision-language-models)
   - [Audio Foundations](#audio-foundations)
+  - [OCR](01-foundations/ocr.md)
 - [Omni Modeling and Training](#omni-modeling-and-training)
   - [Duplex Omni Models](#duplex-omni-models)
     - [Full-duplex Audio-Visual Models](#full-duplex-audio-visual-models)
@@ -32,7 +33,7 @@ Papers are listed in tables. The name links to the paper.
 
 ## Foundations
 
-Language, vision-language, and audio foundations that omni models build on.
+Language, vision-language, audio, and OCR foundations that omni models build on.
 
 ### LLM and Reasoning
 
@@ -45,6 +46,10 @@ How images and video connect to language: visual encoders, connectors into the L
 ### Audio Foundations
 
 Speech and general audio before fusion with other modalities: recognition, speaker and paralinguistic cues, representation, and speech generation.
+
+### OCR
+
+Reading printed and handwritten text in images, documents, and video.
 
 ## Omni Modeling and Training
 
