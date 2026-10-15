@@ -168,6 +168,7 @@ The model receives the input, including a stream up to the query time, and retur
 | [Video-Holmes](https://arxiv.org/abs/2505.21374) | Cheng et al., arXiv 2025 | Complex video reasoning that connects clues scattered across a clip. | [Code](https://github.com/TencentARC/Video-Holmes) |
 | [OmniMMI](https://arxiv.org/abs/2503.22952) | Wang et al., CVPR 2025 | Streaming understanding and proactive reasoning. The same paper releases M4-IT. | [Project](https://omnimmi.github.io/) · [M4-IT](https://huggingface.co/datasets/ColorfulAI/M4-IT) |
 | [ViSpeak](https://arxiv.org/abs/2503.12769) | Fu et al., ICCV 2025 | Responding to instructions carried in the visual stream. Includes ViSpeak-Bench. | [Code](https://github.com/HumanMLLM/ViSpeak) · [Bench](https://github.com/HumanMLLM/ViSpeak-Bench) |
+| [OmniCompass](https://arxiv.org/abs/2610.18829) | Liu et al., arXiv 2026 | When, where, and what in a video. A vision track and an audio-visual track, each asked with text alone and with text plus an image. | [Project](https://omnicompass.netlify.app/) · [Code](https://github.com/PolyU-VCLab/OmniCompass) |
 
 ### Duplex Omni Evaluation
 
