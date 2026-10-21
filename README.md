@@ -11,6 +11,8 @@ Papers are listed in tables. The name links to the paper.
   - [Vision-Language Models](#vision-language-models)
   - [Audio Foundations](#audio-foundations)
   - [OCR](01-foundations/ocr.md)
+  - [World Model](01-foundations/world-model.md)
+  - [Embody](01-foundations/embody.md)
 - [Omni Modeling and Training](#omni-modeling-and-training)
   - [Duplex Omni Models](#duplex-omni-models)
     - [Full-duplex Audio-Visual Models](#full-duplex-audio-visual-models)
@@ -33,7 +35,7 @@ Papers are listed in tables. The name links to the paper.
 
 ## Foundations
 
-Language, vision-language, audio, and OCR foundations that omni models build on.
+Language, vision-language, audio, OCR, world-model, and embodied foundations that omni models build on.
 
 ### LLM and Reasoning
 
@@ -50,6 +52,14 @@ Speech and general audio before fusion with other modalities: recognition, speak
 ### OCR
 
 Reading printed and handwritten text in images, documents, and video.
+
+### World Model
+
+An internal model of how the world changes, used for prediction and planning.
+
+### Embody
+
+Models that connect seeing and language to physical action.
 
 ## Omni Modeling and Training
 
