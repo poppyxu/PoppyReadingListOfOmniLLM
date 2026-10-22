@@ -14,6 +14,8 @@ Papers are listed in the [repository README](../README.md#foundations), except [
   - [OCR Evaluation](ocr.md#ocr-evaluation)
 - [World Model](world-model.md)
   - [JEPA Series](world-model.md#jepa-series)
+  - [Genie Series](world-model.md#genie-series)
+  - [World Labs](world-model.md#world-labs)
 - [Embody](embody.md)
   - [VLM](embody.md#vlm)
   - [VLA](embody.md#vla)
