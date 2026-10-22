@@ -178,6 +178,7 @@ The model receives the input, including a stream up to the query time, and retur
 | [Video-Holmes](https://arxiv.org/abs/2505.21374) | Cheng et al., arXiv 2025 | Complex video reasoning that connects clues scattered across a clip. | [Code](https://github.com/TencentARC/Video-Holmes) |
 | [OmniMMI](https://arxiv.org/abs/2503.22952) | Wang et al., CVPR 2025 | Streaming understanding and proactive reasoning. The same paper releases M4-IT. | [Project](https://omnimmi.github.io/) · [M4-IT](https://huggingface.co/datasets/ColorfulAI/M4-IT) |
 | [ViSpeak](https://arxiv.org/abs/2503.12769) | Fu et al., ICCV 2025 | Responding to instructions carried in the visual stream. Includes ViSpeak-Bench. | [Code](https://github.com/HumanMLLM/ViSpeak) · [Bench](https://github.com/HumanMLLM/ViSpeak-Bench) |
+| [Omni Demand Understanding](https://arxiv.org/abs/2609.21392) | Chen et al., arXiv 2026 | Whether the latest turn is a demand for the assistant, and what that demand is once visual, acoustic, and dialogue context are filled in. No-demand scenes score false triggers. | [Project](https://odubench.github.io) · [Data](https://huggingface.co/datasets/qc316/odubench) |
 | [OmniCompass](https://arxiv.org/abs/2610.18829) | Liu et al., arXiv 2026 | When, where, and what in a video. A vision track and an audio-visual track, each asked with text alone and with text plus an image. | [Project](https://omnicompass.netlify.app/) · [Code](https://github.com/PolyU-VCLab/OmniCompass) |
 
 ### Duplex Omni Evaluation
@@ -190,6 +191,7 @@ The model keeps listening while it can speak, and decides both when to respond a
 | [OmniPro](https://arxiv.org/abs/2605.18577) | Zhao et al., arXiv 2026 | Proactive response on audio-visual streams. Online mode lets the model choose when to speak. | [Project](https://ruixiangzhao.github.io/OmniPro) · [Data](https://huggingface.co/datasets/omniproact-bench/OmniPro) |
 | [OmniInteract](https://arxiv.org/abs/2605.26485) | Lu et al., arXiv 2026 | Native online audio-visual interaction, including interruption and nested turns, without future content. | [Code](https://github.com/Lucky-Lance/OmniInteract) |
 | [VideoFDB](https://arxiv.org/abs/2605.30256) | Mazumdar et al., arXiv May 2026 | Full-duplex conversation on real video calls. The agent is scored on perceiving and producing nonverbal cues such as nods, gaze, and gestures. | [Project](https://research.nvidia.com/labs/amri/projects/video-fdb/) · [Data](https://huggingface.co/datasets/nvidia/video-full-duplex-benchmark) |
+| [OmniAssistBench](https://arxiv.org/abs/2608.21360) | Sun et al., arXiv 2026 | Real-time video assistance along a fixed path. Event-triggered tasks ask the model to wait, and to stay quiet, until the requested moment. | [Project](https://xianyunsun.github.io/OmniAssistBench/) · [Code](https://github.com/XianyunSun/OmniAssistBench) |
 
 ### Audio Duplex Evaluation
 
