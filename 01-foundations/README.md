@@ -19,4 +19,7 @@ Papers are listed in the [repository README](../README.md#foundations), except [
 - [Embody](embody.md)
   - [VLM](embody.md#vlm)
   - [VLA](embody.md#vla)
+  - [LingBot](embody.md#lingbot)
+  - [Qwen Robot](embody.md#qwen-robot)
   - [WAM](embody.md#wam)
+  - [Cosmos Series](embody.md#cosmos-series)
