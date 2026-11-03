@@ -1,12 +1,13 @@
 # Foundations
 
-Language, vision-language, audio, OCR, world-model, and embodied foundations.
+Language, persona, vision-language, audio, OCR, world-model, and embodied foundations.
 
-Papers are listed in the [repository README](../README.md#foundations), except [OCR](ocr.md), [World Model](world-model.md), and [Embody](embody.md), which stay on their own pages.
+Papers are listed in the [repository README](../README.md#foundations), except [Persona](persona.md), [OCR](ocr.md), [World Model](world-model.md), and [Embody](embody.md), which stay on their own pages.
 
 ## Topics
 
 - [LLM and Reasoning](llm-and-reasoning.md)
+- [Persona](persona.md)
 - [Vision-Language Models](vision-language-models.md)
 - [Audio Foundations](audio-foundations.md)
 - [OCR](ocr.md)

@@ -8,6 +8,7 @@ Papers are listed in tables. The name links to the paper.
 
 - [Foundations](#foundations)
   - [LLM and Reasoning](#llm-and-reasoning)
+  - [Persona](01-foundations/persona.md)
   - [Vision-Language Models](#vision-language-models)
   - [Audio Foundations](#audio-foundations)
   - [OCR](01-foundations/ocr.md)
@@ -35,11 +36,15 @@ Papers are listed in tables. The name links to the paper.
 
 ## Foundations
 
-Language, vision-language, audio, OCR, world-model, and embodied foundations that omni models build on.
+Language, persona, vision-language, audio, OCR, world-model, and embodied foundations that omni models build on.
 
 ### LLM and Reasoning
 
 Language modeling, instruction following, long context, and multi-step reasoning used as the backbone for later omni systems.
+
+### Persona
+
+How a model acquires a stable way of behaving: written principles, character training, and the directions inside the network that those traits correspond to.
 
 ### Vision-Language Models
 
@@ -180,6 +185,7 @@ The model receives the input, including a stream up to the query time, and retur
 | [ViSpeak](https://arxiv.org/abs/2503.12769) | Fu et al., ICCV 2025 | Responding to instructions carried in the visual stream. Includes ViSpeak-Bench. | [Code](https://github.com/HumanMLLM/ViSpeak) · [Bench](https://github.com/HumanMLLM/ViSpeak-Bench) |
 | [Omni Demand Understanding](https://arxiv.org/abs/2609.21392) | Chen et al., arXiv 2026 | Whether the latest turn is a demand for the assistant, and what that demand is once visual, acoustic, and dialogue context are filled in. No-demand scenes score false triggers. | [Project](https://odubench.github.io) · [Data](https://huggingface.co/datasets/qc316/odubench) |
 | [OmniCompass](https://arxiv.org/abs/2610.18829) | Liu et al., arXiv 2026 | When, where, and what in a video. A vision track and an audio-visual track, each asked with text alone and with text plus an image. | [Project](https://omnicompass.netlify.app/) · [Code](https://github.com/PolyU-VCLab/OmniCompass) |
+| [OmniVChat](https://arxiv.org/abs/2609.21465) | He et al., arXiv 2026 | Native audio-visual dialogue. The question is inside the user's audio and video, and the model returns one text reply. A tiered rubric scores dialogue state, entity alignment, identity, grounding, and emotion, with a human-recorded set for transfer from synthetic clips. | [Code](https://github.com/HarlandZZC/OmniVChat) · [Data](https://huggingface.co/datasets/Harland/OmniVChat) |
 
 ### Duplex Omni Evaluation
 
